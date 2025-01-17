@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarRent - Your Premium Car Rental Service</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">CarRent</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#vehicle-categories">Vehicles</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h1>Rent Your Perfect Ride</h1>
+      <div class="search-card">
+        <input type="text" id="pickup-location" placeholder="Pick-up Location">
+        <input type="date" id="pickup-date">
+        <input type="date" id="return-date">
+        <button id="search-cars">Search Cars</button>
+      </div>
+    </section>
+
+    <section id="vehicle-categories">
+      <h2>Choose Your Vehicle Type</h2>
+      <div class="category-grid">
+        <div class="category-card" data-category="sedan">
+          <div class="category-image"></div>
+          <h3>Sedan</h3>
+        </div>
+        <div class="category-card" data-category="mpv">
+          <div class="category-image"></div>
+          <h3>MPV</h3>
+        </div>
+        <div class="category-card" data-category="suv">
+          <div class="category-image"></div>
+          <h3>SUV</h3>
+        </div>
+        <div class="category-card" data-category="minibus">
+          <div class="category-image"></div>
+          <h3>Mini Bus</h3>
+        </div>
+        <div class="category-card" data-category="bus">
+          <div class="category-image"></div>
+          <h3>Bus</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="vehicle-options" class="hidden">
+      <h2>Available Vehicles</h2>
+      <div class="options-grid">
+        <!-- Vehicle options will be dynamically added here -->
+      </div>
+    </section>
+
+    <section id="features">
+      <h2>Why Choose CarRent</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <i class="icon-variety"></i>
+          <h3>Wide Variety</h3>
+          <p>Choose from our extensive fleet of vehicles to suit your needs.</p>
+        </div>
+        <div class="feature-card">
+          <i class="icon-price"></i>
+          <h3>Best Prices</h3>
+          <p>Competitive pricing with no hidden fees. Get the best value for your money.</p>
+        </div>
+        <div class="feature-card">
+          <i class="icon-support"></i>
+          <h3>24/7 Support</h3>
+          <p>Our customer support team is always ready to assist you.</p>
+        </div>
+        <div class="feature-card">
+          <i class="icon-vehicles"></i>
+          <h3>Vehicles Available</h3>
+          <p><span class="counter" data-target="150">0</span> Vehicles</p>
+        </div>
+        <div class="feature-card">
+          <i class="icon-customers"></i>
+          <h3>Customers Served</h3>
+          <p><span class="counter" data-target="5000">0</span> Customers</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta">
+      <h2>Ready to Hit the Road?</h2>
+      <p>Book your car now and enjoy the freedom of the open road.</p>
+      <button class="cta-button">Book Now</button>
+    </section>
+  </main>
+
+  <div class="overlay"></div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Rentals</h4>
+        <ul>
+          <li><a href="#">Car Types</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Special Offers</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/rajendra.rokade.7923" class="social-icon" target="_blank">FB</a>
+          <a href="https://www.linkedin.com/in/siddharth-rokade-1261ab24a/" class="social-icon" target="_blank">Ln</a>
+          <a href="https://www.instagram.com/_siddharth_rokade_/" class="social-icon" target="_blank">IG</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 CarRent. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
